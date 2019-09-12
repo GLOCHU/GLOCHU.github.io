@@ -50,7 +50,7 @@
                     tableBody.appendChild(tr);
     				for(var j = 0; j < 2; j++){
     					var td = document.createElement('TD');
-    					td.appendChild(document.createTextNode('Cell'));
+    					prepareFrame(i*3+j);
     					tr.appendChild(td);
     				}
 			    }
