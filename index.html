@@ -26,6 +26,8 @@
 		    function prepareFrame() {
 			var ifrm = document.createElement("iframe");
 			ifrm.setAttribute("src", "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1855538555&amp;format=interactive");
+			ifrm.setAttribute("seamless frameborder", "0");
+			ifrm.setAttribute("scrolling", "no");
 			ifrm.style.width = "700px";
 			ifrm.style.height = "330px";
 			document.body.appendChild(ifrm);
