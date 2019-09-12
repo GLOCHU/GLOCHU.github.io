@@ -37,7 +37,7 @@
 			ifrm.setAttribute("scrolling", "no");
 			ifrm.style.width = "700px";
 			ifrm.style.height = "330px";
-			return ifrm;
+			td.appendChild(ifrm);
 		    }
 			function tableCreate(){
 			    var body = document.body,
@@ -49,7 +49,7 @@
 				var tr = tbl.insertRow();
 				for(var j = 0; j < 2; j++){
 					var td = tr.insertCell();
-					td.apppendChild(prepareFrame(i*3+j));
+					prepareFrame(i*3+j);
 					td.style.border = '1px solid black';
 				}
 			    }
