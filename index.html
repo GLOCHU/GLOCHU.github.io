@@ -23,17 +23,17 @@
 	    	</form>
 		
 		<script type="text/javascript">
-		    function prepareFrame() {
+		    function prepareFrame(x) {
 			var charts = ["https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1855538555&amp;format=interactive",
 				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=222152141&amp;format=interactive"]
 			var ifrm = document.createElement("iframe");
-			ifrm.setAttribute("src", charts[0]);
+			ifrm.setAttribute("src", charts[x]);
 			ifrm.setAttribute("scrolling", "no");
 			ifrm.style.width = "700px";
 			ifrm.style.height = "330px";
 			document.body.appendChild(ifrm);
 		    }
-			prepareFrame();
+			prepareFrame(0);
 		</script> 
 		
 		<table style="width: 2100px;" border="1">
