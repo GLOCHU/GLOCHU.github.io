@@ -24,36 +24,37 @@
 		
 		<script type="text/javascript">
 		    function prepareFrame(x) {
-			var charts = ["https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1855538555&amp;format=interactive",
-				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=222152141&amp;format=interactive",
-				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=175571606&amp;format=interactive",
-				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1662357456&amp;format=interactive",
-				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1829059559&amp;format=interactive",
-				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=725751576&amp;format=interactive",
-				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1369483879&amp;format=interactive",
-				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=844692341&amp;format=interactive",]
-			var ifrm = document.createElement("iframe");
-			ifrm.setAttribute("src", charts[x]);
-			ifrm.setAttribute("scrolling", "no");
-			ifrm.style.width = "700px";
-			ifrm.style.height = "330px";
-			td.appendChild(ifrm);
+    			var charts = ["https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1855538555&amp;format=interactive",
+    				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=222152141&amp;format=interactive",
+    				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=175571606&amp;format=interactive",
+    				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1662357456&amp;format=interactive",
+    				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1829059559&amp;format=interactive",
+    				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=725751576&amp;format=interactive",
+    				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1369483879&amp;format=interactive",
+    				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=844692341&amp;format=interactive",]
+    			var ifrm = document.createElement("iframe");
+    			ifrm.setAttribute("src", charts[x]);
+    			ifrm.setAttribute("scrolling", "no");
+    			ifrm.style.width = "700px";
+    			ifrm.style.height = "330px";
+    			td.appendChild(ifrm);
 		    }
 			function tableCreate(){
-			    var body = document.body,
-				tbl  = document.createElement('table');
-			    tbl.style.width  = '2100px';
-			    tbl.style.border = '1px solid black';
+                var table = document.createElement('TABLE');
+                table.border = '1';
+                var tableBody = document.createElement('TBODY');
+                table.appendChild(tableBody);
 
 			    for(var i = 0; i < 3; i++){
-				var tr = tbl.insertRow();
-				for(var j = 0; j < 2; j++){
-					var td = tr.insertCell();
-					td.appendChild(document.createTextNode('Cell'));
-					td.style.border = '1px solid black';
-				}
+                    var tr = document.createElement('TR');
+                    tableBody.appendChild(tr);
+    				for(var j = 0; j < 2; j++){
+    					var td = document.createElement('TD');
+    					td.appendChild(document.createTextNode('Cell'));
+    					tr.appendChild(td);
+    				}
 			    }
-			    body.appendChild(tbl);
+			    document.body.appendChild(table);
 			}
 			tableCreate();
 		</script> 
