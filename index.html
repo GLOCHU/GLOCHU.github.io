@@ -6,7 +6,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<h1>Form Demo</h1>
+		<h1>Real Time Dashboard</h1>
     		<form>
        			<fieldset>
          			<legend>Selecting elements</legend>
@@ -21,6 +21,17 @@
 		  		</p>
 	       		</fieldset>
 	    	</form>
+		
+		<script type="text/javascript">
+		    function prepareFrame() {
+			var ifrm = document.createElement("iframe");
+			ifrm.setAttribute("src", "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1855538555&amp;format=interactive");
+			ifrm.style.width = "700px";
+			ifrm.style.height = "330px";
+			document.body.appendChild(ifrm);
+		    }
+		</script> 
+		prepareFrame();
 		<table style="width: 2100px;" border="1">
 		<tbody>
 		<tr>
