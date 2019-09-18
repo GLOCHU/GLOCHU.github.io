@@ -45,10 +45,10 @@
                 var tableBody = document.createElement('TBODY');
                 table.appendChild(tableBody);
 
-			    for(var i = 0; i < x; i++){
+		for(var i = 0; i < y; i++){
                     var tr = document.createElement('TR');
                     tableBody.appendChild(tr);
-    				for(var j = 0; j < y; j++){
+    				for(var j = 0; j < x; j++){
     					var td = document.createElement('TD');
     					var cur = i*x+j
     					if(cur < 8)
