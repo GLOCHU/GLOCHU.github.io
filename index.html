@@ -39,18 +39,18 @@
     			ifrm.style.height = "330px";
     			return ifrm;
 		    }
-			function tableCreate(){
+			function tableCreate(x, y){
                 var table = document.createElement('TABLE');
                 table.border = '1';
                 var tableBody = document.createElement('TBODY');
                 table.appendChild(tableBody);
 
-			    for(var i = 0; i < 3; i++){
+			    for(var i = 0; i < x; i++){
                     var tr = document.createElement('TR');
                     tableBody.appendChild(tr);
-    				for(var j = 0; j < 3; j++){
+    				for(var j = 0; j < y; j++){
     					var td = document.createElement('TD');
-    					var cur = i*3+j
+    					var cur = i*x+j
     					if(cur < 8)
         					td.appendChild(prepareFrame(cur));
     					tr.appendChild(td);
@@ -58,7 +58,7 @@
 			    }
 			    document.body.appendChild(table);
 			}
-			tableCreate();
+			tableCreate(3, 3);
 		</script> 
 
 
