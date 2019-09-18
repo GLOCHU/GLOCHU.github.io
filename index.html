@@ -48,17 +48,17 @@
 		for(var i = 0; i < y; i++){
                     var tr = document.createElement('TR');
                     tableBody.appendChild(tr);
-    				for(var j = 0; j < x; j++){
-    					var td = document.createElement('TD');
-    					var cur = i*x+j
-    					if(cur < 8)
-        					td.appendChild(prepareFrame(cur));
-    					tr.appendChild(td);
-    				}
-			    }
-			    document.body.appendChild(table);
-			}
-			tableCreate(2, 4);
+    		    for(var j = 0; j < x; j++){
+    		    	var td = document.createElement('TD');
+    			var cur = i*y+j
+    			if(cur < 8)
+        			td.appendChild(prepareFrame(cur));
+    				tr.appendChild(td);
+    			}
+		    }
+		    document.body.appendChild(table);
+		}
+		tableCreate(2, 4);
 		</script> 
 
 
