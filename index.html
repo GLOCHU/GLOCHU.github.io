@@ -6,9 +6,10 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<!--home history-->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		  <a class="navbar-brand" href="#">
-		    <img src="GLOCHU.github.io/logo.png" width="200" height="60" alt="" class="inline"/>
+		  	<img src="GLOCHU.github.io/logo.png" width="150" height="45" alt="" class="inline"/>
 		  </a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -20,7 +21,7 @@
 		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Link</a>
+		        <a class="nav-link" href="#">Record</a>
 		      </li>
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -45,7 +46,7 @@
 		</nav>
     		<form>
        			<fieldset>
-         			<legend>Selecting elements</legend>
+         			<legend>Real Time Dashboard</legend>
           			<p>
              				<label>Select list</label>
             				<select id = "myList">
@@ -59,8 +60,8 @@
 	    	</form>
 
 		<script type="text/javascript">
-		    function prepareFrame(x) {
-    			var charts = ["https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1855538555&amp;format=interactive",
+			function prepareFrame(x) {
+	    	var charts = ["https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1855538555&amp;format=interactive",
     				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=222152141&amp;format=interactive",
     				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=175571606&amp;format=interactive",
     				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1662357456&amp;format=interactive",
@@ -68,35 +69,32 @@
     				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=725751576&amp;format=interactive",
     				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=1369483879&amp;format=interactive",
     				      "https://docs.google.com/a/codeco.hk/spreadsheets/d/e/2PACX-1vRpR5-gXXibRoNhcf5hCDB_FlRdRhLflJEli29T_z5JHx5dwkNloQS-H7ddUlfBsSxZf5vgn5xDXWly/pubchart?oid=844692341&amp;format=interactive",]
-    			var ifrm = document.createElement("iframe");
-    			ifrm.setAttribute("src", charts[x]);
-    			ifrm.setAttribute("scrolling", "no");
-    			ifrm.style.width = "700px";
-    			ifrm.style.height = "330px";
-    			return ifrm;
-		    }
-			function tableCreate(x, y){
-                var table = document.createElement('TABLE');
-                table.border = '1';
-                var tableBody = document.createElement('TBODY');
-                table.appendChild(tableBody);
-
-		for(var i = 0; i < y; i++){
-                    var tr = document.createElement('TR');
-                    tableBody.appendChild(tr);
-    		    for(var j = 0; j < x; j++){
-    		    	var td = document.createElement('TD');
-    			var cur = i*y+j
-    			if(cur < 8)
-        			td.appendChild(prepareFrame(cur));
-    				tr.appendChild(td);
-    			}
-		    }
-		    document.body.appendChild(table);
+    		var ifrm = document.createElement("iframe");
+    		ifrm.setAttribute("src", charts[x]);
+    		ifrm.setAttribute("scrolling", "no");
+    		ifrm.style.width = "700px";
+    		ifrm.style.height = "330px";
+    		return ifrm;
+		 }
+		 function tableCreate(x, y){
+			 var table = document.createElement('TABLE');
+			 table.border = '1';
+			 var tableBody = document.createElement('TBODY');
+			 table.appendChild(tableBody);
+			 for(var i = 0; i < y; i++){
+				 var tr = document.createElement('TR');
+				 tableBody.appendChild(tr);
+				 for(var j = 0; j < x; j++){
+					 var td = document.createElement('TD');
+					 var cur = i*y+j
+					 if(cur < 8)
+					   td.appendChild(prepareFrame(cur));
+					tr.appendChild(td);
+    		}
+			}
+		  document.body.appendChild(table);
 		}
 		tableCreate(3, 3);
 		</script>
-
-
 	</body>
 </html>
